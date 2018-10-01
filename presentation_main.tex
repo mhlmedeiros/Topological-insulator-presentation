@@ -1,0 +1,149 @@
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\documentclass[usenames, dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{multimedia}
+\usepackage{smartdiagram}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{braket}
+\usepackage{dsfont}
+\usepackage{amsmath,amssymb}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{subfig}
+\usepackage{verbatim}
+\usepackage{hyperref}
+ 
+\newtcbox{\mymath}[1][]{%
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=blue!50!green!50,
+    colback=blue!10!white, boxrule=1pt,
+    #1}
+\newtcbox{\mymathred}[1][]{%
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=red!50!black!50,
+    colback=red!10!white, boxrule=1pt,
+    #1}
+ 
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Copenhagen}
+%\usetheme{CambridgeUS}
+%\usetheme{Szeged}
+%\usetheme{Goettingen}
+\usetheme{bjeldbak/beamerthemebjeldbak}
+%\usecolortheme{seahorse}
+% \usecolortheme{beaver}
+
+% O bloco de comandos a seguir garante que a cada início de seção
+% surge o sumário com a seção corrente em destaque  
+%
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Sumário}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+
+\title[introduction to topological insulators] %optional
+{Topological Insulators}
+\subtitle{A short introduction}
+
+\author[My name]{\textbf {Marcos H. Lima de Medeiros}\\ \textbf{\footnotesize Supervisor:} \footnotesize Luis Gregório Dias da Silva }
+\institute[VFU] % (optional)
+{
+  Instituto de Física\\
+  Universidade de São Paulo
+}
+\date[VLC 2013] % (optional)
+{October, 2018}
+%\logo{\includegraphics[height=0.6cm]{usp.png}}
+
+
+
+
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+ \frametitle{Summary}
+ \tableofcontents[pausesections]
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Textos em destaque}
+
+In this slide, some important text will be
+\alert{highlighted} beause it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}{Exemplo}
+Sample text in green box. "Examples" is fixed as block title.
+\end{examples}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$ E= mc^2 $$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
