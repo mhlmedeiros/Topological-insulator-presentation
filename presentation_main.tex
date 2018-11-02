@@ -16,7 +16,13 @@
 \usepackage{subfig}
 \usepackage{verbatim}
 \usepackage{hyperref}
- 
+
+% For greek words:
+\usepackage[LGR,T1]{fontenc}
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
+% ###########################
+
+
 \newtcbox{\mymath}[1][]{%
     nobeforeafter, math upper, tcbox raise base,
     enhanced, colframe=blue!50!green!50,
@@ -27,7 +33,7 @@
     enhanced, colframe=red!50!black!50,
     colback=red!10!white, boxrule=1pt,
     #1}
- 
+
 %\usetheme{Bergen}
 %\usetheme{Berkeley}
 %\usetheme{Copenhagen}
@@ -39,7 +45,7 @@
 % \usecolortheme{beaver}
 
 % O bloco de comandos a seguir garante que a cada início de seção
-% surge o sumário com a seção corrente em destaque  
+% surge o sumário com a seção corrente em destaque
 %
 %\AtBeginSection[]
 %{
@@ -52,9 +58,9 @@
 
 \title[introduction to topological insulators] %optional
 {Topological Insulators}
-\subtitle{A short introduction}
+\subtitle{a short introduction}
 
-\author[My name]{\textbf {Marcos H. Lima de Medeiros}\\ \textbf{\footnotesize Supervisor:} \footnotesize Luis Gregório Dias da Silva }
+\author[My name]{\textbf {Marcos H. Lima de Medeiros}}
 \institute[VFU] % (optional)
 {
   Instituto de Física\\
@@ -77,73 +83,6 @@
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Textos em destaque}
-
-In this slide, some important text will be
-\alert{highlighted} beause it's important.
-Please, don't abuse it.
-
-\begin{block}{Remark}
-Sample text
-\end{block}
-
-\begin{alertblock}{Important theorem}
-Sample text in red box
-\end{alertblock}
-
-\begin{examples}{Exemplo}
-Sample text in green box. "Examples" is fixed as block title.
-\end{examples}
-
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Two-column slide}
-
-\begin{columns}
-
-\column{0.5\textwidth}
-This is a text in first column.
-$$ E= mc^2 $$
-\begin{itemize}
-\item First item
-\item Second item
-\end{itemize}
-
-\column{0.5\textwidth}
-This text will be in the second column
-and on a second tought this is a nice looking
-layout in some cases.
-\end{columns}
-\end{frame}
-
+\include{phases_of_matter/phases_of_matter}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
