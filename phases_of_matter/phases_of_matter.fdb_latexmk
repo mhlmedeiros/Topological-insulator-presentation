@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1541359143 "phases_of_matter.tex" "/home/marcos/Documents/Topological-insulator-presentation/phases_of_matter/phases_of_matter.pdf" "phases_of_matter" 1541359144
+  "/etc/texmf/web2c/texmf.cnf" 1537563853 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/marcos/Documents/Topological-insulator-presentation/phases_of_matter/phases_of_matter.aux" 1541359110 2869 b914f52ef9d042b8da84350f31276ab7 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539369090 4127071 3d3f9c1f933382dbbd288dcee3a17959 ""
+  "phases_of_matter.tex" 1541359142 5506 3366cce7232591c835588fcdc6e7d1d7 ""
+  (generated)
+  "/home/marcos/Documents/Topological-insulator-presentation/phases_of_matter/phases_of_matter.pdf"
+  "/home/marcos/Documents/Topological-insulator-presentation/phases_of_matter/phases_of_matter.log"
+  "phases_of_matter.log"

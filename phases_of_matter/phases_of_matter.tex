@@ -1,28 +1,34 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %%%%%%%%%%%%% Phases of Matter %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{2016 Nobel prize}
+    \includegraphics[width=1\textwidth]{phases_of_matter/nobel_phys_2016.jpg}
+\end{frame}
+
+
 \section{Phases of Matter}
 
 \begin{frame}
-    \frametitle{Phases os matter}
-    In the very heart of the classification of these phase lies
-    the concept of symmetry. Therefore, the phase transitions
-    are related to symmetry-breaking processes.
+    \frametitle{States (phases) of Matter}
+
+    \begin{block}{}
+        Classically, when we change temperature we may have
+        phase transitions
+    \end{block}
 
     \begin{columns}
-
     \column{0.3\textwidth}
-    On a daily basis:
-    \begin{itemize}
-        \item Plasma
-        \item Gases
-        \item Liquids
-        \item Solids
-    \end{itemize}
+        \begin{itemize}
+            \item Solid
+            \item Liquid
+            \item Gas
+            \item Plasma
+        \end{itemize}
 
     \column{0.70\textwidth}
-    \includegraphics[width=1\textwidth]{/home/marcos/topological_insulator_presentation/Topological-insulator-presentation/phases_of_matter/nobel_with_mug_doughnut.png}
-
+        \includegraphics[width=1\textwidth]{phases_of_matter/tirinha_states_matter.jpg}
     \end{columns}
 
 \end{frame}
@@ -30,14 +36,42 @@
 \begin{frame}
 
     \frametitle{Symmetry and order}
+    \begin{block}{Landau paradigm}
+        Phase transitions are related to (local) order parameters:
+        more symmetric less oredered the system
+    \end{block}
 
     \begin{columns}
-
     \column{0.5\textwidth}
-
-
+    \begin{itemize}
+        \item Solid
+        \item Liquid
+        \item Gas
+        \item Plasma
+    \end{itemize}
     \column{0.5\textwidth}
+        \includegraphics[width=0.5\textwidth]{phases_of_matter/setas_order_symmetry.png}
+    \end{columns}
 
+\end{frame}
+
+\begin{frame}
+
+    \frametitle{Symmetry and order}
+    \begin{block}{Landau paradigm}
+        Phase transitions are related to (local) order parameters:
+        more symmetric less oredered the system
+    \end{block}
+
+    \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item Ferromagnetic
+        \item Antiferromagnetic
+        \item Paramagnetic
+    \end{itemize}
+    \column{0.5\textwidth}
+        \includegraphics[width=0.5\textwidth]{phases_of_matter/spin_chains.png}
     \end{columns}
 
 \end{frame}
@@ -46,102 +80,154 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %%%%%%%  Quantum Phases of Matter %%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Quantum phases of Matter}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %%%%% Topological  Phases of Matter %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Topology in matter}
+
 
 \begin{frame}
-\frametitle{Diferenças Finitas (1D)}
+    \frametitle{In little bit of Topology}
 
+    Topology $=$ (\textgreek{t'opos}) $+$ (\textgreek{l'ogos})
+    $=$ place $+$ study
 
-    \begin{empheq}[box={\mymath}]{equation*}
-    i\hbar \frac{\partial\psi(x,t)}{\partial t} = \left[ -\frac{\hbar^2}{2m_e} \frac{\partial^2}{\partial x^2} + V(x)\right]\psi(x,t)
-    \end{empheq}
-
-
-    %\pause
 
     \begin{columns}
+    \column{0.5\textwidth}
+        \begin{block}{Gauss-Bonnet formula:}
+            \begin{equation}
+                \int_S \kappa_1 \kappa_2 dA = 2\pi\chi = 2\pi(2-g)
+            \end{equation}
+                esphere : $2\pi (2-0) = 4\pi$
 
-    \column{0.4\textwidth}
-    \begin{empheq}[box=\tcbhighmath]{align*}
-    x \rightarrow x_m &\equiv m \Delta x\\
-    t \rightarrow t_n &\equiv n \Delta t \\
-    \\
-    \psi(x_m,t_n) &\equiv \psi_{m,n}
-    \end{empheq}
+                torus : $2\pi (2-1) = 2\pi$
+        \end{block}
+    \column{0.5\textwidth}
+        \includegraphics[width=.9\textwidth]{phases_of_matter/topological_transitions_geometry.png}
+    \end{columns}
 
-    \column{0.6\textwidth}
+\end{frame}
 
-    %\onslide<3->{
-    \begin{empheq}[box={\mymath}]{align*}
-    \left.\frac{\partial^2 \psi}{\partial x^2}\right|_{x_m,t_n} &\approx \frac{\psi_{m+1,n}+\psi_{m-1,n}-2\psi_{m,n}}{\Delta x^2}\\
-    \\
-    \left.\frac{\partial \psi}{\partial t}\right|_{x_m,t_n} &\approx \frac{\psi_{m,n+1} - \psi_{m,n}}{\Delta t}
-    \end{empheq}
-    %}
+\begin{frame}
+    \frametitle{Trivial Insulators}
+    \begin{columns}
+
+        \column{0.5\textwidth}
+            Band theory of solids: insulators has a gapped band structure
+
+            \only<1>{\includegraphics[width=.7\textwidth]{phases_of_matter/bands_insulator.png}}
+            \only<2->{\includegraphics[width=.7\textwidth]{phases_of_matter/bands_electron_hole.png}}
+
+        \column{0.5\textwidth}
+            \only<3->{\begin{block}{The Dirac sea}
+                The vacuum is also "gapped".
+                \includegraphics[width=.7\textwidth]{phases_of_matter/dirac_sea.png}
+            \end{block}}
 
     \end{columns}
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %%%%% Topological  Phases of Matter %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Topological phases of Matter}
 
+\begin{frame}
+    \frametitle{Quantum Hall Effect}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{block}{}
+            \begin{equation}
+                H(\alpha) = (1-\alpha)H + \alpha H^{\prime} \nonumber
+            \end{equation}
+        \end{block}
+        \begin{center}
+            \includegraphics[width=.7\textwidth]{phases_of_matter/equivalent_gapped_hamiltonians.png}
+        \end{center}
 
+        \column{0.4\textwidth}
+        \pause
+        Is every gapped system topological equivalent to the vaccum?
+        \pause
+
+        Answer: No!
+        \begin{block}{}
+            \includegraphics[width=\textwidth]{phases_of_matter/non_equivalent_systems.png}
+        \end{block}
+    \end{columns}
+
+\end{frame}
 
 
 \begin{frame}
-    \frametitle{Topological phases of matter}
+    \frametitle{First topological insulator}
 
-    Topology $=$ (\textgreek{t'opos}) $+$ (\textgreek{l'ogos})
-    $=$ place $+$ study
-    
+    \begin{columns}
 
-    % \begin{columns}
-    %
-    % \column{0.5\textwidth}
+    \column{0.5\textwidth}
+        Landau levels:
+        \begin{equation}
+            E = \hbar \omega_c \left( m +  \frac{1}{2}\right) \nonumber
+        \end{equation}
+
+        Hall conductivity:
+        \begin{equation}
+            \sigma_{xy} = \frac{Ne^2}{2\pi\hbar} \nonumber
+        \end{equation}
 
 
-    % \column{0.5\textwidth}
-    \includegraphics[width=1\textwidth]{/home/marcos/topological_insulator_presentation/Topological-insulator-presentation/phases_of_matter/scale_of_genus_number.png}
+    \column{0.5\textwidth}
+    Berry phase associated to Bloch wavefunctions:
 
-    % \end{columns}
+    \begin{equation}
+        \mathcal{F}^m(\mathbf{k}) = i \nabla \times \Braket{u_m(k)|\nabla_k|u_m(k)} \nonumber
+    \end{equation}
+
+    \begin{block}{Thouless, Kohmoto, Nightingale and den Nijs(TKNN)}
+        \[N =  \sum_{m=1}^{M} \int \frac{d^2\mathbf{k}}{2\pi}  \mathcal{F}^m_{k_xk_y} \]
+    \end{block}
+
+    \end{columns}
 
 \end{frame}
+
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %%%%%%%%%%  Why does it matters %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Why does it matters?}
+\section{Topological Insulators}
 
 \begin{frame}
-    \frametitle{Phases os matter}
-%O estudo das chamadas fases topógicas da matéria possuem
-%motivações que vão desde a pesquisa básica até a aplicação
-%na engenharia de dispositivos:
+    \frametitle{2D Tolopological Insulators}
+
+        Also known as Quantum spin Hall system.
+
+        \includegraphics[width=\textwidth]{phases_of_matter/different_hall_effects.jpg}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Transport in Tolopological Insulators}
 
     \begin{columns}
 
-    \column{0.45\textwidth}
-    On a daily basis:
-    \begin{itemize}
-        \item Gases;
-        \item Liquids;
-        \item Solids;
-        \item Plasma.
-    \end{itemize}
+    \column{0.5\textwidth}
+        'Hidden' edge-states only for spin (?):
 
-    \column{0.7\textwidth}
-    % \includegraphics[width=1\textwidth]{/home/marcos/Dropbox/images_presentations/spin_orbitronics.png}
-    %
-    % {\tiny
-    % Manchon, Aurelien, et al. "New perspectives for Rashba spin-orbit coupling." arXiv preprint arXiv:1507.02408 (2015)
+        \includegraphics[width=\textwidth]{phases_of_matter/110_delta_0_E_426.png}
 
+    \column{0.5\textwidth}
+        Tunable 2D topological insulator.
 
+        \includegraphics[width=\textwidth]{phases_of_matter/3_plots_juntos.png}
     \end{columns}
 
+\end{frame}
+
+\begin{frame}
+      \centering \Huge
+      \textbf{\emph{Thank you}}
 \end{frame}
